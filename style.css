@@ -1,0 +1,599 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+  
+body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;  
+    height: 9.6rem;
+    padding: 0 4.8rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 90%;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+  
+.sticky .section-hero {
+    margin-top: 9.6rem;
+}
+
+/**************************/
+/* NAVIGACIJA */
+/**************************/
+  
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+}
+  
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+  
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #3e2723;
+}
+  
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #3e2723;
+}
+  
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color: #fff;
+    color: #3e2723;
+    border: 1px solid #3e2723;
+}
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+  
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+}
+  
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+  
+/**************************/
+/* sekcija za hero */
+/**************************/
+  
+.section-hero {
+    background-color: #FFEBC1;
+    padding: 4.8rem 0 9.6rem 0;
+}
+  
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+}
+  
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+  
+.hero-img {
+    width: 80%;
+}
+
+.heading-primary {
+    font-weight: 700;
+    color: #3e2723;
+    letter-spacing: -0.5px;
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+}
+
+.about-us{
+  text-align: center;
+  margin: 200px auto;
+}
+
+.about-tittle{
+    font-weight: 700;
+    color: #3e2723;
+    letter-spacing: -0.5px;
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 5.2rem;
+}
+
+.about-text{
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+
+/**************************/
+/* book sekcija */
+/**************************/
+
+.section-books {
+  padding: 9.6rem 0;
+  background-color: #FFEBC1;
+}
+
+.book {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+  background-color: white;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.book:hover {
+  /*transform: translateY(-1.2rem);*/
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.book-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  width: 300px;
+}
+
+.book-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.book-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.book-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.book-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+.book-img {
+  width: 300px;
+  height: 300px;
+}
+
+.grid--3-cols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mapa{
+  text-align: center;
+  margin: 0 auto;
+}
+
+/**************************/
+/* CTA Sekcija */
+/**************************/
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  background-color: #3e2723;
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(62, 39, 35,0.35),
+      rgb(62, 39, 35,0.35)
+    ),
+  url("https://images.unsplash.com/photo-1455849318743-b2233052fcff?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  color:#efebe9;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+.sing-tittle{
+    font-weight: 700;
+    color: #efebe9;
+    letter-spacing: -0.5px;
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 5.2rem;
+}
+
+.dugmic{
+  grid-column: 1/-1;
+  border: 1px solid #448aff;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #263238;
+  color: #448aff;
+  font-size:large;
+}
+.dugmic:hover{
+  background-color: #448aff;
+  color: #263238;
+  border: 1px solid #263238;
+}
+
+@media (max-width: 84em) {
+.hero {
+    max-width: 120rem;
+}
+
+.heading-primary {
+    font-size: 4.4rem;
+}
+
+.gallery {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 75em) {
+html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+}
+
+.grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+}
+
+.header {
+    padding: 0 3.2rem;
+}
+
+.main-nav-list {
+    gap: 3.2rem;
+}
+
+.hero {
+    gap: 4.8rem;
+}
+}
+
+@media (max-width: 59em) {
+html {
+    font-size: 50%;
+}
+
+.hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+}
+
+.hero-text-box,
+.hero-img-box {
+    text-align: center;
+}
+
+.hero-img {
+    width: 60%;
+}
+
+.book-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+}
+
+.cta {
+    grid-template-columns: 3fr 2fr;
+}
+
+.cta-form {
+    grid-template-columns: 1fr;
+}
+
+/* Navigacija na telefonu */
+.btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+}
+
+.main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.nav-open .main-nav {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.nav-open .icon-mobile-nav[name="close-outline"] {
+  display: block;
+}
+
+.nav-open .icon-mobile-nav[name="menu-outline"] {
+  display: none;
+}
+
+.main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    font-size: 3rem;
+}
+}
+
+@media (max-width: 44em) {
+.grid--3-cols{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 34em) {
+.grid {
+    row-gap: 4.8rem;
+}
+
+.grid--3-cols{
+    grid-template-columns: 1fr;
+}
+
+.section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+}
+
+.hero {
+    padding: 0 3.2rem;
+}
+
+.hero-img {
+    width: 80%;
+}
+
+.cta {
+    grid-template-columns: 1fr;
+}
+
+.cta-text-box {
+    padding: 3.2rem;
+}
+
+.cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+}
+}
+}
+
+/* The Modal (background) */
+.modall {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content/Box */
+.modal-contentt {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  margin-top: 10px;
+  margin-left: 15%;
+  margin-right: 50px;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#nameOfBook, #authorOfBook, 
+#urlOfBook, #pagesOfBook, 
+#genreOfBook, #addAuthor{
+  height: 30px;
+  width: 50%;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-family: inherit;
+  color: inherit;
+}
+
+.popup-text{
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.05;  
+}
+
+.popup-add{
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.sviautori{
+  background-color: rgb(197, 197, 197);
+  margin-bottom: 20px;
+}
+
+.sviautori-ime,
+.sviautori-id{
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.05;  
+}
+
+.imeautor, .bookautor{
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.05;  
+  color: rgb(49, 49, 49);
+}
+
+.popup-add2{
+  margin-top: 10px;
+}
